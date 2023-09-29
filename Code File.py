@@ -3,8 +3,7 @@ import pickle
 import streamlit as st
 import sklearn
 
-# model = joblib.load(r'C:\Users\Dell1\Desktop\decision_tree_model.pkl')
-model = pickle.load(open(r'C:\Users\Dell1\Desktop\DeploymentProject\Streamlit\rf_model.pkl','rb'))
+model = pickle.load(open('rf_model.pkl','rb'))
 
 def main():
     st.title('Employee Churn Predictor')
